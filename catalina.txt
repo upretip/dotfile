@@ -1,0 +1,27 @@
+gathering the list of applications that are installed on my catalina currently
+
+#Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+#Brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew analytics off
+
+➜ brew tap
+adoptopenjdk/openjdk
+homebrew/cask
+homebrew/cask-fonts
+homebrew/core
+homebrew/services
+
+➜ brew list
+gcc             git             isl             libmpc          mpfr            openssl@1.1     postgresql      readline        xz
+gdbm            gmp             jpeg            libpng          node            pcre            python          sqlite          pkg-config
+gettext         icu4c           krb5            libtool         openblas        pcre2           r               unixodbc
+
+
+➜ brew cask list
+adoptopenjdk8        docker              lastpass             rescuetime           
+slack                visual-studio-code   whatsapp
+cyberduck            font-fira-code       iterm2               messenger            
+rstudio              vagrant              webstorm             zoomus
