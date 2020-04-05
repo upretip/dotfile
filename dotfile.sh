@@ -8,16 +8,22 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 brew analytics off
 
 # brew
+brew install git
 brew install gcc
 brew install python
 brew install r
 brew install postgres
 brew install unixodbc
 
+# set up git
 
-# brew cask
+# brew cask 
 brew cask install docker
 brew cask install iterm2
 brew cask install visual-studio-code
 brew cask install rstudio
 brew cask install firefox
+
+# brew cask communication
+brew cask install whatsapp
+brew cask install zoomus
