@@ -7,6 +7,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew analytics off
 
+# zsh specific plugins and settings
+
+brew tap adoptopenjdk/openjdk
+brew tap homebrew/cask-fonts
+brew tap homebrew/cask
+brew tap homebrew/core
+brew tap homebrew/services
+
 # brew
 brew install git
 brew install gcc
