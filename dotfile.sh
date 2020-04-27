@@ -18,10 +18,12 @@ brew tap homebrew/services
 # brew
 brew install git
 brew install gcc
+brew install awscli
 brew install python
 brew install r
 brew install postgres
 brew install unixodbc
+
 
 # set up git
 
@@ -36,7 +38,3 @@ brew cask install firefox
 brew cask install whatsapp
 brew cask install zoomus
 
-
-#install awscli using pip3
-
-pip3 install awscli
