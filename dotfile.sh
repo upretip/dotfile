@@ -35,3 +35,8 @@ brew cask install firefox
 # brew cask communication
 brew cask install whatsapp
 brew cask install zoomus
+
+
+#install awscli using pip3
+
+pip3 install awscli
