@@ -84,3 +84,7 @@ git config --global init.defaultBranch main
 
 # gnupg
 
+
+# install configuration from dotfile
+git clone git@github.com:upretip/dotfile.git ~/Documents/dotfile
+
