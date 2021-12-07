@@ -76,15 +76,13 @@ brew install --cask zoom
 brew install --cask microsoft-teams
 brew install --cask slack
 
-# setup
-# git
-git config --global user.name "pupreti"
-git config --global user.email $useremail
-git config --global init.defaultBranch main
-
 # gnupg
 
 
 # install configuration from dotfile
-git clone git@github.com:upretip/dotfile.git ~/Documents/dotfile
+git clone git@github.com:upretip/dotfile.git ~/.dotfile
 
+# symbolic links to config 
+ln -s ~/.dotfile/.gitconfig ~/.gitconfig
+ln -s ~/.dotfile/.vimrc ~/.vimrc
+ln -s ~/.dotfile/.zshrc ~/.zshrc
