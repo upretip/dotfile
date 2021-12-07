@@ -42,7 +42,7 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -68,7 +68,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git python)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,10 +98,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias python=python3
+alias work='cd /Users/pupreti/Documents/lions'
+alias gitignore='curl -fsSL gitignore.io/api/python,macos'
+alias venv='python3 -m venv venv && source venv/bin/activate'
 
 # added by Snowflake SnowSQL installer v1.2
-export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH
+export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH:$HOME/.local/bin
 eval "$(pyenv init -)"
 eval "$(pyenv init -)"
 export PATH="/usr/local/sbin:$PATH"
- unsetopt correct_all #stop zsh: correct "test" to "tests" [nyae]?
+#  unsetopt correct_all #stop zsh: correct "test" to "tests" [nyae]?
