@@ -117,3 +117,4 @@ git clone git@github.com:upretip/dotfile.git ~/.dotfile
 ln -s ~/.dotfile/.gitconfig ~/.gitconfig
 ln -s ~/.dotfile/.vimrc ~/.vimrc
 ln -s ~/.dotfile/.zshrc ~/.zshrc
+ln -sf $HOME/.dotfile/.pip.conf $HOME/.config/pip/pip.conf 
