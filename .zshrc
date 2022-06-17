@@ -109,3 +109,4 @@ eval "$(pyenv init -)"
 export PATH="/usr/local/sbin:$PATH"
 #  unsetopt correct_all #stop zsh: correct "test" to "tests" [nyae]?
 alias gitinit="git init && touch README.md && touch license"
+export PATH="/opt/homebrew/bin:$PATH"

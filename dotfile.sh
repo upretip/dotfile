@@ -62,6 +62,7 @@ brew install tmux
 brew install tree
 brew install gnupg
 brew install hugo
+brew install rectangle
 # brew install postgres
 # brew install unixodbc
 
@@ -118,3 +119,8 @@ ln -s ~/.dotfile/.gitconfig ~/.gitconfig
 ln -s ~/.dotfile/.vimrc ~/.vimrc
 ln -s ~/.dotfile/.zshrc ~/.zshrc
 ln -sf $HOME/.dotfile/.pip.conf $HOME/.config/pip/pip.conf 
+
+# dbt autocomplete script
+curl -fsSL https://raw.githubusercontent.com/dbt-labs/dbt-completion.bash/master/_dbt -o _dbt
+mkdir -p  ~/.oh-my-zsh/completions/
+mv _dbt ~/.oh-my-zsh/completions/ 
