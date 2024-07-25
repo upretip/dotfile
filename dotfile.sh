@@ -43,6 +43,7 @@ open
 
 echo "tap repositories for homebrew"
 # zsh specific plugins and settings
+brew tap hashicorp/tap
 brew tap adoptopenjdk/openjdk
 brew tap homebrew/cask-fonts
 brew tap homebrew/cask
@@ -63,6 +64,7 @@ brew install tree
 brew install gnupg
 brew install hugo
 brew install rectangle
+brew install hashicorp/tap/terraform
 # brew install postgres
 # brew install unixodbc
 
@@ -78,7 +80,7 @@ brew install --cask visual-studio-code
 brew install --cask rstudio
 brew install --cask firefox
 brew install --cask snowflake-snowsql
-brew install --cask popsql
+brew install --cask dbeaver-community
 brew install --cask box-sync
 brew install --cask box-tools
 brew install --cask tableau@2020.3.4
