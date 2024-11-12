@@ -133,3 +133,4 @@ source ~/.zshrc
 # curl -fsSL https://raw.githubusercontent.com/dbt-labs/dbt-completion.bash/master/_dbt -o _dbt
 # mkdir -p  ~/.oh-my-zsh/completions/
 # mv _dbt ~/.oh-my-zsh/completions/ 
+
