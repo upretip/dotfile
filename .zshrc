@@ -70,10 +70,10 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git 
   python
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  fast-syntax-highlighting
-  zsh-autocomplete
+  # zsh-autosuggestions
+  # zsh-syntax-highlighting
+  # fast-syntax-highlighting
+  # zsh-autocomplete
  )
 
 source $ZSH/oh-my-zsh.sh
@@ -110,6 +110,7 @@ alias venv='python3 -m venv venv && source venv/bin/activate'
 
 # added by Snowflake SnowSQL installer v1.2
 export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH:$HOME/.local/bin
+eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(pyenv init -)"
 eval "$(pyenv init -)"
 export PATH="/usr/local/sbin:$PATH"

@@ -19,6 +19,15 @@ brew upgrade
 brew update
 brew doctor
 
+echo "adding configuration files"
+echo "symbolic links to config"
+ln -s ~/.dotfile/.gitconfig ~/.gitconfig
+ln -s ~/.dotfile/.vimrc ~/.vimrc
+ln -s ~/.dotfile/.zshrc ~/.zshrc
+ln -s ~/.dotfile/.sqlfluff ~/.sqlfluff
+ln -sf $HOME/.dotfile/.pip.conf $HOME/.config/pip/pip.conf 
+source ~/.zshrc
+
 echo "set up ssh keys"
 # from nnja/new-computer
 read -p "Input email address for ssh key: " useremail
@@ -116,18 +125,8 @@ pipx install sqlfluff
 # https://stackoverflow.com/questions/59287824/specifying-multiple-trusted-hosts-in-pip-conf#59288637
 
 
-
-
-echo "symbolic links to config"
-ln -s ~/.dotfile/.gitconfig ~/.gitconfig
-ln -s ~/.dotfile/.vimrc ~/.vimrc
-ln -s ~/.dotfile/.zshrc ~/.zshrc
-ln -s ~/.dotfile/.sqlfluff ~/.sqlfluff
-ln -sf $HOME/.dotfile/.pip.conf $HOME/.config/pip/pip.conf 
-
 gpg --default-new-key-algo rsa4096 --gen-key
 git config --global user.signingkey 5E586CB34FC7C4DB
-source ~/.zshrc
 
 # dbt autocomplete script
 # curl -fsSL https://raw.githubusercontent.com/dbt-labs/dbt-completion.bash/master/_dbt -o _dbt
