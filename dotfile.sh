@@ -11,14 +11,6 @@ git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 
-echo "Installing Homebrew"
-#Brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew analytics off
-brew upgrade
-brew update
-brew doctor
-
 echo "adding configuration files"
 echo "symbolic links to config"
 ln -s ~/.dotfile/.gitconfig ~/.gitconfig
@@ -52,13 +44,17 @@ ssh-keyscan -t rsa bitbucket.org >> ~/.ssh/known_hosts
 pbcopy < ~/.ssh/id_rsa.pub
 open https://github.com/settings/keys # Prompts browser login to add ssh key to github
 
+echo "Installing Homebrew"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew analytics off
+brew upgrade
+brew update
+brew doctor
+
 echo "tap repositories for homebrew"
 # zsh specific plugins and settings
 brew tap hashicorp/tap
 brew tap adoptopenjdk/openjdk
-brew tap homebrew/cask-fonts
-brew tap homebrew/cask
-brew tap homebrew/core
 brew tap homebrew/services
 
 echo "Installing tools using homebrew"
